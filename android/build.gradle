@@ -17,14 +17,8 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 27
 
-    defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
-    }
     lintOptions {
         abortOnError false
     }
@@ -40,5 +34,6 @@ allprojects {
 dependencies {
     implementation project(':scanlibrary')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation'com.android.support:support-v7:27.0.0'
     implementation 'com.facebook.react:react-native:+'
 }
