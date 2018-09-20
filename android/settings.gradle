@@ -1,2 +1,3 @@
 rootProject.name = 'react-native-document-scanner'
-include 'scanlibrary'
+include ':scanlibrary'
+project(':scanlibrary').projectDir = new File('./scanlibrary')
