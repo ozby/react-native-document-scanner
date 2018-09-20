@@ -31,15 +31,15 @@ android {
     }
 }
 
-dependencies {
-    implementation project(':scanlibrary')
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.facebook.react:react-native:+'
-}
-
 allprojects {
     repositories {
         google()
         jcenter()
     }
+}
+
+dependencies {
+    implementation project(':scanlibrary')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.facebook.react:react-native:+'
 }
